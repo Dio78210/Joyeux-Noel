@@ -10,14 +10,21 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
-h1,h2 {
+h1 {
     color: #fff;
-    font-size: 6rem;
+    font-size: 3rem;
     text-shadow: 0 0 20px #ff0000, 0 0 30px #00ff00, 0 0 40px #0000ff;
     animation: glow 2s infinite;
     margin: 0;
     position: relative;
     z-index: 1;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
 }
 
 @keyframes glow {
@@ -70,5 +77,11 @@ h1,h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .firework {
+        width: 3px;
+        height: 3px;
+    }
 }
