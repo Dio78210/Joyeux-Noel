@@ -7,7 +7,7 @@ const container = document.querySelector('.container');
                 firework.style.animationDelay = Math.random() * 2 + 's';
 
                 // Randomize size
-                const size = Math.random() * 20 + 5; // Sizes between 5px and 25px
+                const size = Math.random() * 15 + 5; // Sizes between 5px and 20px
                 firework.style.width = `${size}px`;
                 firework.style.height = `${size}px`;
 
